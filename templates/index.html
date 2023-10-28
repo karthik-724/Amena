@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Amena</title>
+</head>
+<body>
+    <div class="info">
+        <h1>Amena</h1>
+
+        <p>
+            Try out the new chat experience using amena now !!!
+        <p>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <t>PalM based chat engine</t>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message received">
+                <i class="material-icons hear-button" id="hear-button">volume_up</i>
+                <div class="message-content">Hello! How can I help you?</div>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <div class="input-box">
+                <input  type="text" id="user-message" placeholder="Enter your message...">
+                    <i class="material-icons" id="voice-button">mic</i>
+            </div>
+            <button id="send-button">
+                <i class="material-icons">send</i>
+            </button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

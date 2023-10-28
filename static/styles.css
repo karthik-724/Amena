@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color : rgb(254, 194, 96);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align the chat container to the right */
+    height: 100vh;
+}
+h1{
+    color: black;
+    margin-left: 20px;
+    font-size: 500%;
+}
+
+.chat-container {
+    width: 70%; /* Set the width to 70% of the viewport width */
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(161, 37, 104);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.info{
+    width: 30%;
+}
+.chat-header {
+    background-color: rgb(59, 24, 95);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin : 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.chat-messages {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message.sent {
+    background-color: rgb(203, 162, 244);
+    color: #fff;
+    text-align: right;
+}
+
+.message.received {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    background-color: rgb(212, 173, 252); /* Background color for received messages */
+    margin: 10px; /* Adjust spacing as needed */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Rounded corners for the message box */
+}
+#message-input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+.chat-input {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 5px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded edges on both sides */
+    margin-right: 10px;
+    position: relative;
+}
+
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 400%;
+    color: rgb(112, 47, 135);
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    color: aliceblue;
+    background-color: rgb(161, 37, 104);
+    border-radius: 20px; /* Rounded edges on both sides */
+    padding-left: 10px;
+}
+.input-box input::placeholder{
+    color: aliceblue;
+}
+.input-box i {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    color: #007bff; /* Microphone icon color */
+    cursor: pointer;
+}
+
+#send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Rounded edges on both sides */
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.hear-button {
+    font-size: 24px; /* Adjust the size as needed */
+    color: #007bff; /* Icon color */
+    margin-right: 10px; /* Add some spacing to separate the icon from the content */
+    border: none; /* Remove the border */
+    background: none; /* Remove background color */
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+}
+
+.material-icons {
+    font-size: 24px;
+}
+
